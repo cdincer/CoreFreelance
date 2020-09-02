@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using FreelanceApp.API.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace FreelanceApp.API.Controllers
 {
@@ -47,9 +48,9 @@ namespace FreelanceApp.API.Controllers
 
 */
         [HttpGet]
-        public IActionResult GetValues()
+        public async Task<IActionResult> GetValues()
         {
-         var values = _context.MyProperty.ToList();
+         var values = await _context.MyProperty.ToListAsync();
 
          return Ok(values);
         }
@@ -57,9 +58,9 @@ namespace FreelanceApp.API.Controllers
 
 
            [HttpGet("{id}")]
-        public IActionResult GetValue(int id)
+        public async Task<IActionResult> GetValue(int id)
         {
-         var values = _context.MyProperty.FirstOrDefault(x => x.Id ==id);
+         var values = await _context.MyProperty.FirstOrDefaultAsync(x => x.Id ==id);
 
          return Ok(values);
         }
