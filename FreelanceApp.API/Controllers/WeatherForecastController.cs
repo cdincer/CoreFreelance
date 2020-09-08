@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using FreelanceApp.API.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FreelanceApp.API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
@@ -56,7 +58,7 @@ namespace FreelanceApp.API.Controllers
         }
 
 
-
+        [AllowAnonymous]
            [HttpGet("{id}")]
         public async Task<IActionResult> GetValue(int id)
         {
