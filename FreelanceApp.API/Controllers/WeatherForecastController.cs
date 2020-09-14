@@ -49,6 +49,7 @@ namespace FreelanceApp.API.Controllers
         }
 
 */
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetValues()
         {
@@ -59,7 +60,7 @@ namespace FreelanceApp.API.Controllers
 
 
         [AllowAnonymous]
-           [HttpGet("{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetValue(int id)
         {
          var values = await _context.MyProperty.FirstOrDefaultAsync(x => x.Id ==id);
