@@ -10,6 +10,6 @@ export interface User {
     city: string;
     country: string;
     personalsummary?: string;
-    lookingFor?: number;
+    lookingFor?: string;
     photos?: Photo[];
 }

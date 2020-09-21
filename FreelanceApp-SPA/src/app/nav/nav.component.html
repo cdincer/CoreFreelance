@@ -24,7 +24,7 @@
       </button>
       <ul id="dropdown-triggers-manual" *dropdownMenu class="dropdown-menu"
           role="menu" aria-labelledby="button-triggers-manual">
-        <li class="dropdown-item" role="menuitem"><a class="fa fa-user text-dark" href="#"> Edit Profile</a></li>
+        <li class="dropdown-item" role="menuitem"><a class="fa fa-user text-dark" [routerLink]="['/member/edit']" > Edit Profile</a></li>
         <div class="dropdown-divider"></div>
         <li class="dropdown-item" role="menuitem"><a class="fa fa-sign-out text-dark" (click)="logout()" href="#"> Logout</a>
         </li>

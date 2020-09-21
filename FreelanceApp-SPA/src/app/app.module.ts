@@ -1,3 +1,4 @@
+import { MemberEditComponent } from './members/member-edit/member-edit.component';
 import { MemberListResolver } from './_resolvers/member-list.resolver';
 import { MemberDetailResolver } from './_resolvers/member-detail.resolver';
 import { TabsModule } from 'ngx-bootstrap/tabs';
@@ -13,6 +14,7 @@ import {FormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { JwtModule } from '@auth0/angular-jwt';
+import {NgxGalleryModule} from '@kolkov/ngx-gallery';
 
 
 import { AppComponent } from './app.component';
@@ -41,7 +43,8 @@ export function tokenGetter() {
       ListsComponent,
       MessagesComponent,
       MemberCardComponent,
-      MemberDetailComponent
+      MemberDetailComponent,
+      MemberEditComponent
    ],
   imports: [
     BrowserModule,
@@ -57,7 +60,8 @@ export function tokenGetter() {
         allowedDomains : ['localhost:5000'],
         disallowedRoutes : ['localhost:5000/api/auth']
       }
-    })
+    }),
+    NgxGalleryModule
   ],
   providers: [
     AuthService,
