@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj": {}
+    "c:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj": {
+    "c:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj",
+        "projectUniqueName": "c:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj",
         "projectName": "FreelanceApp.API",
-        "projectPath": "C:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj",
+        "projectPath": "c:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj",
         "packagesPath": "C:\\Users\\Can\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\obj\\",
+        "outputPath": "c:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Can\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -39,6 +39,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.8.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",

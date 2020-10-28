@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "CZ61OQYIoEPxmESCZtsbnLqQzxLIT+BpFzEuydorwM9F0mLAlwk308aFtd0vZpNOaPQluIxgiyBv2LkiYtRSDg==",
+  "dgSpecHash": "1hqgtdjIYEr1vRKu4lbIMAnEwj2wWKktQH+Bi6DifoQ3TXsfmUvvzHgLj5xe+r29cSnPbEl0hzrnEboCGVcfJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj",
+  "projectFilePath": "c:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Can\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Can\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Can\\.nuget\\packages\\cloudinarydotnet\\1.8.0\\cloudinarydotnet.1.8.0.nupkg.sha512",
     "C:\\Users\\Can\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.0\\microsoft.aspnetcore.authentication.jwtbearer.3.1.0.nupkg.sha512",
     "C:\\Users\\Can\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.0\\microsoft.aspnetcore.jsonpatch.3.1.0.nupkg.sha512",
     "C:\\Users\\Can\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.0\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.0.nupkg.sha512",
