@@ -1,3 +1,4 @@
+import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 import { MemberEditComponent } from './members/member-edit/member-edit.component';
@@ -46,7 +47,9 @@ export function tokenGetter() {
       MessagesComponent,
       MemberCardComponent,
       MemberDetailComponent,
-      MemberEditComponent
+      MemberEditComponent,
+      PhotoEditorComponent
+
    ],
   imports: [
     BrowserModule,
