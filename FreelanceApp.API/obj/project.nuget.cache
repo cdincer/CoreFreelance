@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1hqgtdjIYEr1vRKu4lbIMAnEwj2wWKktQH+Bi6DifoQ3TXsfmUvvzHgLj5xe+r29cSnPbEl0hzrnEboCGVcfJQ==",
+  "dgSpecHash": "elFaI1l06V5AKj0ZEx2rQgznCwvxydt5gY8Bucf3wjtpW1/h19VYsmQoBXMwVwHMBK6NhL8HXUwTe+G3MrsqXQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj",
+  "projectFilePath": "C:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Can\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Can\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
