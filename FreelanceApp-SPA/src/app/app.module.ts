@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { JwtModule } from '@auth0/angular-jwt';
 import {NgxGalleryModule} from '@kolkov/ngx-gallery';
+import { FileUploadModule } from 'ng2-file-upload';
 
 
 import { AppComponent } from './app.component';
@@ -66,7 +67,8 @@ export function tokenGetter() {
         disallowedRoutes : ['localhost:5000/api/auth']
       }
     }),
-    NgxGalleryModule
+    NgxGalleryModule,
+    FileUploadModule
   ],
   providers: [
     AuthService,
