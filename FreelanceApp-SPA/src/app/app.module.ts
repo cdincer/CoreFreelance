@@ -20,6 +20,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { JwtModule } from '@auth0/angular-jwt';
 import {NgxGalleryModule} from '@kolkov/ngx-gallery';
 import { FileUploadModule } from 'ng2-file-upload';
+import { TimeagoModule } from 'ngx-timeago';
 
 
 import { AppComponent } from './app.component';
@@ -71,7 +72,8 @@ export function tokenGetter() {
       }
     }),
     NgxGalleryModule,
-    FileUploadModule
+    FileUploadModule,
+    TimeagoModule.forRoot()
   ],
   providers: [
     AuthService,
