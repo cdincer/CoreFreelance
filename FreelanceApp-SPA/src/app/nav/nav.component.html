@@ -20,7 +20,7 @@
 
     <div  *ngIf="loggedIn()"  class="dropdown" dropdown #dropdown="bs-dropdown" [autoClose]="false">
       <span>
-        <img src="{{photoUrl}}" alt="">
+        <img src="{{photoUrl || '../../../assets/user.png'}}" alt="">
       </span>
       <button dropdownToggle type="button" class="dropdown-toggle text-dark">
         Welcome {{authService.decodedToken?.unique_name | titlecase}} <span class="caret"></span>
