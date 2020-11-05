@@ -1,8 +1,11 @@
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { PaginatedResult } from './../_models/pagination';
 import { User } from './../_models/user';
 import { Observable } from 'rxjs';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { environment } from './../../environments/environment';
 import { Injectable } from '@angular/core';
+import { map } from 'rxjs/operators';
 
 
 
@@ -15,8 +18,37 @@ export class UserService {
 constructor(private http: HttpClient) { }
 
 
-getUsers(): Observable<User[]>{
-  return this.http.get<User[]>(this.baseUrl + 'users');
+getUsers(page?, itemsPerPage?, userParams?): Observable<PaginatedResult<User[]>>{
+
+  const paginatedResult: PaginatedResult<User[]> = new PaginatedResult<User[]>();
+
+  let params = new HttpParams();
+
+  if (page != null && itemsPerPage != null )
+  {
+    params = params.append('pageNumber', page);
+    params = params.append('pageSize', itemsPerPage);
+  }
+
+  if (userParams != null)
+  {
+    params = params.append('minExperience', userParams.minExperience);
+    params = params.append('maxExperience', userParams.maxExperience);
+    params = params.append('orderBy', userParams.orderBy);
+
+  }
+
+  return this.http.get<User[]>(this.baseUrl + 'users', {observe: 'response', params})
+  .pipe(
+    map(response => {
+      paginatedResult.result = response.body;
+      if (response.headers.get('Pagination') != null)
+      {
+        paginatedResult.pagination = JSON.parse(response.headers.get('Pagination'));
+      }
+      return paginatedResult;
+    })
+  );
 }
 
 getUser(id): Observable<User>{
@@ -31,7 +63,7 @@ setMainPhoto(userId: number, id: number){
   return this.http.post(this.baseUrl + 'users/' + userId + '/photos/' + id + '/setMain',{} );
 }
 
-deletePhoto(userId: number, id:number)
+deletePhoto(userId: number, id: number)
 {
   return this.http.delete(this.baseUrl + 'users/' + userId + '/photos/' + id);
 }

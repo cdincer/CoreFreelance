@@ -21,6 +21,9 @@ import { JwtModule } from '@auth0/angular-jwt';
 import {NgxGalleryModule} from '@kolkov/ngx-gallery';
 import { FileUploadModule } from 'ng2-file-upload';
 import { TimeagoModule } from 'ngx-timeago';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+
 
 
 import { AppComponent } from './app.component';
@@ -73,7 +76,9 @@ export function tokenGetter() {
     }),
     NgxGalleryModule,
     FileUploadModule,
-    TimeagoModule.forRoot()
+    TimeagoModule.forRoot(),
+    PaginationModule.forRoot(),
+    ButtonsModule.forRoot()
   ],
   providers: [
     AuthService,
