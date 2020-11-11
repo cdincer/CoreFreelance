@@ -124,13 +124,13 @@ getMessages(id: number, page?, itemsPerPage?, messageContainer?)
 
   deleteMessage(id: number, userId: number)
   {
-    return this.http.post(this.baseUrl + 'users/' + userId + '/messages/' + id, {})
+    return this.http.post(this.baseUrl + 'users/' + userId + '/messages/' + id, {} );
   }
 
 
   markAsRead(userId: number, messageId: number)
   {
-    this.http.post(this.baseUrl + 'users/' + userId + '/messages/' + messageId + '/read',{}).subscribe();
+    this.http.post(this.baseUrl + 'users/' + userId + '/messages/' + messageId + '/read', {}).subscribe();
   }
 
 }
