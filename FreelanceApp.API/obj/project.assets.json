@@ -2354,11 +2354,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj",
+      "projectUniqueName": "C:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj",
       "projectName": "FreelanceApp.API",
-      "projectPath": "c:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj",
+      "projectPath": "C:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\FreelanceApp.API.csproj",
       "packagesPath": "C:\\Users\\Can\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\obj\\",
+      "outputPath": "C:\\Users\\Can\\Documents\\Visual Studio Code\\CoreFreelance\\FreelanceApp.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Can\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2438,7 +2438,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
